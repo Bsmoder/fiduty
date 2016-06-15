@@ -4,16 +4,16 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+            <a href="#top"  onclick = $("#menu-close").click(); >Start</a>
         </li>
         <li>
-            <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            <%= link_to 'Home', {:controller => 'visitors', :action => 'index'} %>
         </li>
         <li>
-            <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            <%= link_to 'Join us as an investor', {:controller => 'users', :action => 'new'}  %>
         </li>
         <li>
-            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            <%= link_to 'Join our CFP list', {:controller => 'professionals', :action => 'index'} %>
         </li>
         <li>
             <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
@@ -27,10 +27,10 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <h1>Start Bootstrap</h1>
-        <h3>Free Bootstrap Themes &amp; Templates</h3>
+        <h1>Fiduty by General Robotics</h1>
+        <h3>Global Financial Marketplace</h3>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        <%= link_to 'Find CFP', {:controller => 'professionals', :action => 'index'} %>
     </div>
 </header>
 
@@ -39,8 +39,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <h2>Welcome to Fiduty. Our job is to bring trust</h2>
+                <p class="lead">We are proud to serve our community for the past 20 years. We make financial industry transparent and trustworthy again. For the past 200 years Wall Street has engaged in some dangerous business.</p>
             </div>
         </div>
         <!-- /.row -->
@@ -127,7 +127,7 @@
 </aside>
 
 <!-- Portfolio -->
-<section id="portfolio" class="portfolio">
+<!--section id="portfolio" class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
                 <!-- /.row (nested) -->
-                <a href="#" class="btn btn-dark">View More Items</a>
+                <!--a href="#" class="btn btn-dark">View More Items</a>
             </div>
             <!-- /.col-lg-10 -->
         </div>
@@ -187,7 +187,7 @@
 </aside>
 
 <!-- Map -->
-<section id="contact" class="map">
+<!--section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
     <br />
     <small>
@@ -222,7 +222,7 @@
                     </li>
                 </ul>
                 <hr class="small">
-                <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                <p class="text-muted">Copyright &copy; General Robotics 2016</p>
             </div>
         </div>
     </div>

@@ -1,0 +1,97 @@
+<%= form_for(@professional) do |f| %>
+  <% if @professional.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@professional.errors.count, "error") %> prohibited this professional from being saved:</h2>
+
+      <ul>
+      <% @professional.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :license %><br>
+    <%= f.text_field :license %>
+  </div>
+  <div class="field">
+    <%= f.label :firmname %><br>
+    <%= f.text_field :firmname %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %><br>
+    <%= f.text_field :photo %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :established %><br>
+    <%= f.number_field :established %>
+  </div>
+  <div class="field">
+    <%= f.label :returncurrentmonth %><br>
+    <%= f.number_field :returncurrentmonth %>
+  </div>
+  <div class="field">
+    <%= f.label :return1year %><br>
+    <%= f.number_field :return1year %>
+  </div>
+  <div class="field">
+    <%= f.label :return3years %><br>
+    <%= f.number_field :return3years %>
+  </div>
+  <div class="field">
+    <%= f.label :return5years %><br>
+    <%= f.number_field :return5years %>
+  </div>
+  <div class="field">
+    <%= f.label :totalassets %><br>
+    <%= f.number_field :totalassets %>
+  </div>
+  <div class="field">
+    <%= f.label :minimumamount %><br>
+    <%= f.number_field :minimumamount %>
+  </div>
+  <div class="field">
+    <%= f.label :volatility %><br>
+    <%= f.number_field :volatility %>
+  </div>
+  <div class="field">
+    <%= f.label :sharperatio %><br>
+    <%= f.number_field :sharperatio %>
+  </div>
+  <div class="field">
+    <%= f.label :standartdeviation %><br>
+    <%= f.number_field :standartdeviation %>
+  </div>
+  <div class="field">
+    <%= f.label :beta %><br>
+    <%= f.number_field :beta %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

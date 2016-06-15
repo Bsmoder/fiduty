@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  phone: 1
+  license: MyString
+  firmname: MyString
+  address: MyString
+  email: MyString
+  photo: MyString
+  description: MyText
+  established: 1
+  returncurrentmonth: 1
+  return1year: 1
+  return3years: 1
+  return5years: 1
+  totalassets: 1
+  minimumamount: 1
+  volatility: 1
+  sharperatio: 1
+  standartdeviation: 1
+  beta: 1
+
+two:
+  firstname: MyString
+  lastname: MyString
+  phone: 1
+  license: MyString
+  firmname: MyString
+  address: MyString
+  email: MyString
+  photo: MyString
+  description: MyText
+  established: 1
+  returncurrentmonth: 1
+  return1year: 1
+  return3years: 1
+  return5years: 1
+  totalassets: 1
+  minimumamount: 1
+  volatility: 1
+  sharperatio: 1
+  standartdeviation: 1
+  beta: 1
